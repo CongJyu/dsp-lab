@@ -16,25 +16,25 @@ def x(n, a):
 
 plt.subplot(2, 2, 1)
 plt.stem(n, x(n, a1))
-plt.title('$ \vert a \vert > 1, a = {a1} $')
+plt.title('$ \\vert a \\vert > 1, a = {a1} $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x(n) $')
 
 plt.subplot(2, 2, 2)
 plt.stem(n, x(n, -a1))
-plt.title('$ \vert a \vert < 1, a = -{a1} $')
+plt.title('$ \\vert a \\vert < 1, a = -{a1} $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x(n) $')
 
 plt.subplot(2, 2, 3)
 plt.stem(n, x(n, a2))
-plt.title('$ \vert a \vert > 1, a = {a2} $')
+plt.title('$ \\vert a \\vert > 1, a = {a2} $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x(n) $')
 
 plt.subplot(2, 2, 4)
 plt.stem(n, x(n, -a2))
-plt.title('$ \vert a \vert < 1, a = -{a2} $')
+plt.title('$ \\vert a \\vert < 1, a = -{a2} $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x(n) $')
 

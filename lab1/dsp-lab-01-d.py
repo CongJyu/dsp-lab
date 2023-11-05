@@ -14,7 +14,7 @@ def x(n):
 
 
 plt.stem(n, x(n))
-plt.title('$ x(n) = sin(\omega n)$')
+plt.title('$ x(n) = sin(\\omega n)$')
 plt.xlabel('$ n $')
 plt.ylabel('$ x(n) $')
 
