@@ -17,9 +17,6 @@ for i in range(7):
 
     z, p, k = signal.tf2zpk(b, a)
 
-    if z.size == 0:
-        z = [0]
-
     print(p)
 
     plt.subplot(2, 4, i + 1)
