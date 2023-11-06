@@ -1,9 +1,8 @@
 # encoding utf-8
-# python 3.12
+# python 3.10
 
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy as spy
 
 n = np.arange(-20, 21, 1)
 delta_n = np.concatenate(
