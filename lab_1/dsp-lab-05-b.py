@@ -3,7 +3,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy import signal
 
 omega0 = [
     -np.pi / 6, -np.pi / 3, -np.pi / 2, 0,

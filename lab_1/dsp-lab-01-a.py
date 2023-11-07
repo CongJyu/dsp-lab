@@ -11,8 +11,10 @@ delta_n = np.concatenate(
 )
 
 plt.stem(n, delta_n.transpose())
-plt.xlabel('n')
-plt.ylabel('Amplitude')
+plt.xlabel('$ n $')
+plt.ylabel('$ \delta (n) $')
 plt.title('Unit Sample Sequence')
-plt.axis([-20, 21, 0, 1.2])
+plt.axis([-20, 20, 0, 1.2])
+plt.grid(True)
+
 plt.show()

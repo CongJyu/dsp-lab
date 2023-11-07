@@ -3,7 +3,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy as spy
 
 n = np.arange(-20, 21, 1)
 omega = np.pi / 6

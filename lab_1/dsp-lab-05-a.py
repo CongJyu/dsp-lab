@@ -30,6 +30,7 @@ for i in range(7):
     plt.ylabel('Imaginary')
     plt.xlim(-2, 2)
     plt.ylim(-2, 2)
-    plt.title('Pole-Zero Plot of H(z)')
+    omega_display = round(omega0[i], 2)
+    plt.title(f'Zero-Pole, $ \omega_0 = {omega_display} $')
 
 plt.show()

@@ -3,7 +3,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy as spy
 
 np.random.seed(2023)
 
@@ -16,20 +15,23 @@ plt.stem(n, x1)
 plt.title('$ x1 $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x1 $')
+plt.grid(True)
 
 plt.subplot(3, 1, 2)
 plt.stem(n, x2)
 plt.title('$ x2 $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x2 $')
+plt.grid(True)
 
-x4 = np.roll(np.flip(x2), 3)
-x4[0:3] = 0
+x4 = np.roll(np.flip(x2), -3)
+x4[x4.size - 3:x4.size] = 0
 
 plt.subplot(3, 1, 3)
 plt.stem(n, x4)
 plt.title('$ x4 $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x4 $')
+plt.grid(True)
 
 plt.show()

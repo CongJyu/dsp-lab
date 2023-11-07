@@ -3,7 +3,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy as spy
 
 np.random.seed(2023)
 
@@ -23,8 +22,8 @@ plt.title('$ x2 $')
 plt.xlabel('$ n $')
 plt.ylabel('$ x2 $')
 
-x3 = np.roll(x1, 6)
-x3[0:6] = 0
+x3 = np.roll(x1, -6)
+x3[x3.size - 6:x3.size] = 0
 plt.subplot(3, 1, 3)
 plt.stem(n, x3)
 plt.title('$ x3 $')

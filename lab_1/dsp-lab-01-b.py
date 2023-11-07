@@ -3,7 +3,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy as spy
 
 n = np.arange(-20, 21, 1)
 epsilon_n = np.concatenate(
@@ -13,7 +12,9 @@ epsilon_n = np.concatenate(
 
 plt.stem(n, epsilon_n.transpose())
 plt.title('Unit Step Sequence')
-plt.xlabel('n')
-plt.ylabel('Amplitude')
-plt.axis([-20, 21, 0, 1.2])
+plt.xlabel('$ n $')
+plt.ylabel('$ u(t) $')
+plt.axis([-20, 20, 0, 1.2])
+plt.grid(True)
+
 plt.show()
