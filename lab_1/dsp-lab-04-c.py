@@ -17,6 +17,7 @@ def original_signal(omega):
 
 for i in range(3):
     Omega = np.arange(-np.pi / T_s[i], np.pi / T_s[i], 0.0001)
+    # Omega = np.arange(-30, 30, 0.0001)
 
     plt.subplot(3, 1, i + 1)
     plt.plot(Omega, original_signal(Omega))
