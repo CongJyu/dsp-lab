@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 定义周期序列
-x = np.array([0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3])
+x = np.array([0, 1, 2, 3])
 
 # 计算离散傅立叶级数
 X = np.fft.fft(x)
