@@ -27,9 +27,9 @@ plt.title('Analog LowPass Filter\'s Amptitude Frequency Response')
 plt.xlabel('Frequency [rad/s]')
 plt.ylabel('Gain [dB]')
 plt.grid()
-plt.axvline(wc, color='green')  # 截止频率
-plt.axhline(-Ap, color='red')  # 通带最大衰减
-plt.axhline(-As, color='blue')  # 阻带最小衰减
+plt.axvline(wc, color='green', linestyle='dotted')  # 截止频率
+plt.axhline(-Ap, color='red', linestyle='dotted')  # 通带最大衰减
+plt.axhline(-As, color='blue', linestyle='dotted')  # 阻带最小衰减
 
 # 绘制滤波器的相频响应图
 plt.subplot(2, 1, 2)
